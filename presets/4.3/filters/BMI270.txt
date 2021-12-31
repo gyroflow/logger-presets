@@ -1,0 +1,15 @@
+#$ TITLE: Gyroflow BMI270 Filter settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: FILTERS
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: gyroflow, BMI270, filter, filters
+#$ AUTHOR: DusKing1
+#$ DESCRIPTION: DMI270 filter settings
+
+set pid_process_denom = 1
+set simplified_gyro_filter = OFF
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_type = PT3
+set gyro_lpf2_static_hz = 80
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
