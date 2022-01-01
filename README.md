@@ -21,6 +21,13 @@ A simple way to configure your Betaflight Flight Controller to a nice motion log
 7. Click on **Save** button and hit **Make Active**
 8. Enjoy!
 
+## Categories
+| Category | Notes |
+| ----------- | ----------- |
+| Blackbox | Blackbox logging settings for gyroflow |
+| Filters | Filters settings for gyroflow |
+| BNF | All-in-one settings for flowbox and flowbox+flowshutter |
+
 ## Credits
 
 The Preset system was developed by @limonspb for Betaflight 4.3.
