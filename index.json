@@ -103,6 +103,7 @@
     ],
     "category": [
       "BLACKBOX",
+      "BNF",
       "FILTERS"
     ],
     "author": [
@@ -113,16 +114,19 @@
     "keywords": [
       "BMI270",
       "blackbox",
+      "config",
       "defaults",
       "disable",
       "filter",
       "filters",
+      "flowbox",
       "gyroflow",
       "log",
       "logging",
       "minimal",
       "reset",
-      "sugarK"
+      "sugarK",
+      "target"
     ]
   },
   "presets": [
@@ -203,7 +207,7 @@
     },
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_minimal.txt",
-      "hash": "1e64a0a32442c7eef9c3d70f25dff1e3b656498c49a8bfe423e507a0a61c4ecb",
+      "hash": "7bdb1af2e4accb0f16968296684a3d8702458f276aa8f8719201314e5ba3a691",
       "options": [
         {
           "name": "gyroflow minimal requirements",
@@ -258,8 +262,47 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/bnf/flowbox.txt",
+      "hash": "7ed00ea4c82c5e75514f99de65be2064a09dc06075101797e58d17f554e8cf1c",
+      "options": [
+        {
+          "name": "flowbox target config",
+          "checked": true
+        },
+        {
+          "name": "filter and blackbox settings",
+          "checked": false
+        },
+        {
+          "name": "Horizon lock",
+          "checked": false
+        },
+        {
+          "name": "flowshutter",
+          "checked": false
+        }
+      ],
+      "title": "Flowbox target settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "OFFICIAL",
+      "keywords": [
+        "gyroflow",
+        "flowbox",
+        "target",
+        "config"
+      ],
+      "author": "DusKing1",
+      "description": [
+        "Here contains the target settings for flowbox and settings for flowshutter board.",
+        "CRSF port on flowshutter should be connected to UART2 on flowbox."
+      ]
+    },
+    {
       "fullPath": "presets/4.3/filters/BMI270.txt",
-      "hash": "7ce37ce4f8d24207b0a8b9b05a493c34bab6b7a8a9141ef663e0874c7c80614f",
+      "hash": "44ad8aca5dc612f776ba1215e4a5a0e0c7214cede79fa8791ea297df532f4a7d",
       "options": [],
       "title": "Gyroflow BMI270 Filter settings",
       "firmware_version": [
