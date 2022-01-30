@@ -1,4 +1,6 @@
 {
+  "majorVersion": 1,
+  "minorVersion": 0,
   "settings": {
     "MetapropertyDirective": "#$",
     "PresetCategories": {
@@ -14,6 +16,19 @@
       "BNF": "BNF",
       "BLACKBOX": "BLACKBOX"
     },
+    "PresetCategoriesPriorities": {
+      "TUNE": 1000000000000,
+      "RATES": 10000,
+      "OSD": 0,
+      "VTX": 1000000,
+      "LEDS": 0,
+      "MODES": 0,
+      "RC_SMOOTHING": 100000000,
+      "FILTERS": 100,
+      "RC_LINK": 10000000000,
+      "BNF": 0,
+      "OTHER": 0
+    },
     "MetadataTypes": {
       "STRING": "STRING",
       "STRING_ARRAY": "STRING_ARRAY",
@@ -22,14 +37,17 @@
       "BOOLEAN": "BOOLEAN",
       "WORDS_ARRAY": "WORDS_ARRAY",
       "FILE_PATH_ARRAY": "FILE_PATH_ARRAY",
-      "PRESET_STATUS": "PRESET_STATUS"
+      "PRESET_STATUS": "PRESET_STATUS",
+      "PRIORITY": "PRIORITY"
     },
     "OptionsDirectives": {
       "OPTION_DIRECTIVE": "option",
       "BEGIN_OPTION_DIRECTIVE": "option begin",
       "END_OPTION_DIRECTIVE": "option end",
       "OPTION_CHECKED": "(checked)",
-      "OPTION_UNCHECKED": "(unchecked)"
+      "OPTION_UNCHECKED": "(unchecked)",
+      "BEGIN_OPTION_GROUP_DIRECTIVE": "option_group begin",
+      "END_OPTION_GROUP_DIRECTIVE": "option_group end"
     },
     "PresetStatusEnum": [
       "OFFICIAL",
@@ -94,6 +112,14 @@
       "include_disclaimer": {
         "type": "FILE_PATH_ARRAY",
         "optional": true
+      },
+      "priority": {
+        "type": "PRIORITY",
+        "optional": true
+      },
+      "force_options_review": {
+        "type": "BOOLEAN",
+        "optional": true
       }
     }
   },
@@ -112,8 +138,8 @@
       "sugarK"
     ],
     "keywords": [
-      "BMI270",
       "blackbox",
+      "BMI270",
       "config",
       "defaults",
       "disable",
@@ -133,56 +159,6 @@
     {
       "fullPath": "presets/4.3/blackbox/blackbox_disable.txt",
       "hash": "e944bffdd34f299b457a502f5574d764f269143ae0bbd9eb142b7bbe75e3ec27",
-      "options": [
-        {
-          "name": "Disable PID data",
-          "checked": false
-        },
-        {
-          "name": "Disable RC data",
-          "checked": false
-        },
-        {
-          "name": "Disable SETPOINT data",
-          "checked": false
-        },
-        {
-          "name": "Disable BATTERY data",
-          "checked": false
-        },
-        {
-          "name": "Disable MAGNETOMETER data",
-          "checked": false
-        },
-        {
-          "name": "Disable ALTIMETER data",
-          "checked": false
-        },
-        {
-          "name": "Disable RSSI data",
-          "checked": false
-        },
-        {
-          "name": "Disable GYRO data",
-          "checked": false
-        },
-        {
-          "name": "Disable ACCELEROMETER data",
-          "checked": false
-        },
-        {
-          "name": "Disable DEBUG data",
-          "checked": false
-        },
-        {
-          "name": "Disable MOTOR data",
-          "checked": false
-        },
-        {
-          "name": "Disable GPS data",
-          "checked": false
-        }
-      ],
       "title": "4.3 Blackbox disable settings",
       "firmware_version": [
         "4.3"
@@ -196,28 +172,11 @@
         "disable",
         "sugarK"
       ],
-      "author": "sugarK",
-      "description": [
-        "Allows you to disable certain blackbox data fields to save space and CPU resources"
-      ],
-      "discussion": "https://github.com/betaflight/firmware-presets/pull/110",
-      "include": [
-        "presets/4.3/blackbox/reset_blackbox.txt"
-      ]
+      "author": "sugarK"
     },
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_minimal.txt",
       "hash": "7bdb1af2e4accb0f16968296684a3d8702458f276aa8f8719201314e5ba3a691",
-      "options": [
-        {
-          "name": "gyroflow minimal requirements",
-          "checked": true
-        },
-        {
-          "name": "Horizon lock",
-          "checked": false
-        }
-      ],
       "title": "Gyroflow minimal settings",
       "firmware_version": [
         "4.3"
@@ -231,18 +190,11 @@
         "logging",
         "log"
       ],
-      "author": "DusKing1",
-      "description": [
-        "Minimal required settings for gyroflow."
-      ],
-      "include": [
-        "presets/4.3/blackbox/reset_blackbox.txt"
-      ]
+      "author": "DusKing1"
     },
     {
       "fullPath": "presets/4.3/blackbox/reset_blackbox.txt",
       "hash": "c80f9b07d7e1bd6d68507ec41ecbf08581cd137fb4154ab3469a589e8ce60fde",
-      "options": [],
       "title": "Reset 4.3 Blackbox settings",
       "firmware_version": [
         "4.3"
@@ -256,32 +208,11 @@
         "logging",
         "log"
       ],
-      "author": "Betaflight",
-      "description": [
-        "Resets the 4.3 blackbox settings back to defaults."
-      ]
+      "author": "Betaflight"
     },
     {
       "fullPath": "presets/4.3/bnf/flowbox.txt",
       "hash": "7ed00ea4c82c5e75514f99de65be2064a09dc06075101797e58d17f554e8cf1c",
-      "options": [
-        {
-          "name": "flowbox target config",
-          "checked": true
-        },
-        {
-          "name": "filter and blackbox settings",
-          "checked": false
-        },
-        {
-          "name": "Horizon lock",
-          "checked": false
-        },
-        {
-          "name": "flowshutter",
-          "checked": false
-        }
-      ],
       "title": "Flowbox target settings",
       "firmware_version": [
         "4.3"
@@ -295,15 +226,11 @@
         "config"
       ],
       "author": "DusKing1",
-      "description": [
-        "Here contains the target settings for flowbox and settings for flowshutter board.",
-        "CRSF port on flowshutter should be connected to UART2 on flowbox."
-      ]
+      "priority": 0
     },
     {
       "fullPath": "presets/4.3/filters/BMI270.txt",
       "hash": "44ad8aca5dc612f776ba1215e4a5a0e0c7214cede79fa8791ea297df532f4a7d",
-      "options": [],
       "title": "Gyroflow BMI270 Filter settings",
       "firmware_version": [
         "4.3"
@@ -317,14 +244,11 @@
         "filters"
       ],
       "author": "DusKing1",
-      "description": [
-        "DMI270 filter settings"
-      ]
+      "priority": 100
     },
     {
       "fullPath": "presets/4.3/filters/defaults.txt",
       "hash": "cd9af0626bc1e8be0738e39995b8d77b0494ee78b83815d4dab261d66c5ae5fd",
-      "options": [],
       "title": "Default 4.3 Filter settings",
       "firmware_version": [
         "4.3"
@@ -338,9 +262,7 @@
         "reset"
       ],
       "author": "Betaflight",
-      "description": [
-        "Resets Filter settings to 4.3 defaults"
-      ]
+      "priority": 100
     }
   ]
 }
