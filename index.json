@@ -177,7 +177,7 @@
     },
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_minimal.txt",
-      "hash": "2941c38b4376f507f2f8826625a173cbe626d6037e08bc362b8f29225f5adb78",
+      "hash": "51d427f96bc12332effbbfce96cff4260bf49564c85e71103594851917cc40b7",
       "title": "Gyroflow minimal settings",
       "firmware_version": [
         "4.3"
@@ -231,7 +231,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/BMI270.txt",
-      "hash": "acb158dc943a9d2c7bb210bbb22a208d41f399ad91733431e70e545ac09d6a05",
+      "hash": "3b66afb0b135700bcdb32233465aa0cc0e148fcf0e1c832a9fa3662a6e24f6f9",
       "title": "Gyroflow BMI270 Filter settings",
       "firmware_version": [
         "4.3"
@@ -244,7 +244,7 @@
         "filter",
         "filters"
       ],
-      "author": "DusKing1",
+      "author": "Gyroflow, DusKing1",
       "priority": 100
     },
     {
