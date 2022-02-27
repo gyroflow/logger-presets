@@ -3,11 +3,12 @@
 #$ CATEGORY: BLACKBOX
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: gyroflow, minimal, blackbox, logging, log, 
-#$ AUTHOR: DusKing1
+#$ AUTHOR: Gyroflow, DusKing1
 #$ DESCRIPTION: Minimal required settings for gyroflow.
 #$ INCLUDE: presets/4.3/blackbox/reset_blackbox.txt
 
 #$ OPTION BEGIN (CHECKED): gyroflow minimal requirements
+set runaway_takeoff_prevention = OFF
 set blackbox_sample_rate = 1/4
 set blackbox_device = SPIFLASH
 set blackbox_disable_pids = ON

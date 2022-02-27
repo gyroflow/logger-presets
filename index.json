@@ -135,6 +135,7 @@
     "author": [
       "Betaflight",
       "DusKing1",
+      "Gyroflow, DusKing1",
       "sugarK"
     ],
     "keywords": [
@@ -176,7 +177,7 @@
     },
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_minimal.txt",
-      "hash": "7bdb1af2e4accb0f16968296684a3d8702458f276aa8f8719201314e5ba3a691",
+      "hash": "2941c38b4376f507f2f8826625a173cbe626d6037e08bc362b8f29225f5adb78",
       "title": "Gyroflow minimal settings",
       "firmware_version": [
         "4.3"
@@ -190,7 +191,7 @@
         "logging",
         "log"
       ],
-      "author": "DusKing1"
+      "author": "Gyroflow, DusKing1"
     },
     {
       "fullPath": "presets/4.3/blackbox/reset_blackbox.txt",
@@ -212,7 +213,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/flowbox.txt",
-      "hash": "7ed00ea4c82c5e75514f99de65be2064a09dc06075101797e58d17f554e8cf1c",
+      "hash": "2ab8947d794279ee46086d21627af371744f9f36825d46997a1e40af7e1aa807",
       "title": "Flowbox target settings",
       "firmware_version": [
         "4.3"
@@ -230,7 +231,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/BMI270.txt",
-      "hash": "44ad8aca5dc612f776ba1215e4a5a0e0c7214cede79fa8791ea297df532f4a7d",
+      "hash": "acb158dc943a9d2c7bb210bbb22a208d41f399ad91733431e70e545ac09d6a05",
       "title": "Gyroflow BMI270 Filter settings",
       "firmware_version": [
         "4.3"
