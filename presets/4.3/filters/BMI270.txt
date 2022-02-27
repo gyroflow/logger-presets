@@ -3,7 +3,7 @@
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: gyroflow, BMI270, filter, filters
-#$ AUTHOR: DusKing1
+#$ AUTHOR: Gyroflow, DusKing1
 #$ DESCRIPTION: DMI270 filter settings
 
 set runaway_takeoff_prevention = OFF

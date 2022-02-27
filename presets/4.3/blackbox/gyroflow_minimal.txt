@@ -27,5 +27,5 @@ set blackbox_mode = NORMAL
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Horizon lock
-#set set blackbox_disable_acc = ON
+set set blackbox_disable_acc = ON
 #$ OPTION END
