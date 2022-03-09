@@ -4,6 +4,8 @@ A simple way to configure your Betaflight Flight Controller to a nice motion log
 
 ## How to use
 
+![](/misc/img/logger-preset-how-to-use.png)
+
 ### Pre-requisites
 
 - Betaflight Configurator 10.8.0 or later
