@@ -177,7 +177,7 @@
     },
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_minimal.txt",
-      "hash": "51d427f96bc12332effbbfce96cff4260bf49564c85e71103594851917cc40b7",
+      "hash": "8f67b1b38832dfd26ca434e95341fbf2b0b1a8d53c7bf50980388005226e7523",
       "title": "Gyroflow minimal settings",
       "firmware_version": [
         "4.3"
@@ -213,7 +213,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/flowbox.txt",
-      "hash": "2ab8947d794279ee46086d21627af371744f9f36825d46997a1e40af7e1aa807",
+      "hash": "5c47c4e8929854faf7e4e99b445636e41415ccf98b61c5aa88af9c8c7e64c80f",
       "title": "Flowbox target settings",
       "firmware_version": [
         "4.3"
