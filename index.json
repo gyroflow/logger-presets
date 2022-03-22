@@ -4,30 +4,14 @@
   "settings": {
     "MetapropertyDirective": "#$",
     "PresetCategories": {
-      "TUNE": "TUNE",
-      "RATES": "RATES",
-      "OSD": "OSD",
-      "VTX": "VTX",
-      "LEDS": "LEDS",
-      "MODES": "MODES",
-      "RC_SMOOTHING": "RC_SMOOTHING",
       "FILTERS": "FILTERS",
-      "RC_LINK": "RC_LINK",
       "BNF": "BNF",
       "BLACKBOX": "BLACKBOX"
     },
     "PresetCategoriesPriorities": {
-      "TUNE": 1000000000000,
-      "RATES": 10000,
-      "OSD": 0,
-      "VTX": 1000000,
-      "LEDS": 0,
-      "MODES": 0,
-      "RC_SMOOTHING": 100000000,
-      "FILTERS": 100,
-      "RC_LINK": 10000000000,
-      "BNF": 0,
-      "OTHER": 0
+      "FILTERS": 10,
+      "BNF": 100,
+      "BLACKBOX": 1000
     },
     "MetadataTypes": {
       "STRING": "STRING",
@@ -38,7 +22,8 @@
       "WORDS_ARRAY": "WORDS_ARRAY",
       "FILE_PATH_ARRAY": "FILE_PATH_ARRAY",
       "PRESET_STATUS": "PRESET_STATUS",
-      "PRIORITY": "PRIORITY"
+      "PRIORITY": "PRIORITY",
+      "PARSER": "PARSER"
     },
     "OptionsDirectives": {
       "OPTION_DIRECTIVE": "option",
@@ -53,6 +38,10 @@
       "OFFICIAL",
       "COMMUNITY",
       "EXPERIMENTAL"
+    ],
+    "ParserEnum": [
+      "TEXT",
+      "MARKED"
     ],
     "presetsDir": "presets",
     "presetsFileEncoding": "utf-8",
@@ -120,6 +109,10 @@
       "force_options_review": {
         "type": "BOOLEAN",
         "optional": true
+      },
+      "parser": {
+        "type": "PARSER",
+        "optional": true
       }
     }
   },
@@ -135,49 +128,30 @@
     "author": [
       "Betaflight",
       "DusKing1",
-      "Gyroflow, DusKing1",
-      "sugarK"
+      "Gyroflow, DusKing1"
     ],
     "keywords": [
       "blackbox",
       "BMI270",
       "config",
       "defaults",
-      "disable",
       "filter",
       "filters",
       "flowbox",
       "gyroflow",
       "log",
       "logging",
+      "main FC",
       "minimal",
       "reset",
-      "sugarK",
+      "secondary FC",
       "target"
     ]
   },
   "presets": [
     {
-      "fullPath": "presets/4.3/blackbox/blackbox_disable.txt",
-      "hash": "e944bffdd34f299b457a502f5574d764f269143ae0bbd9eb142b7bbe75e3ec27",
-      "title": "4.3 Blackbox disable settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BLACKBOX",
-      "status": "OFFICIAL",
-      "keywords": [
-        "blackbox",
-        "logging",
-        "log",
-        "disable",
-        "sugarK"
-      ],
-      "author": "sugarK"
-    },
-    {
       "fullPath": "presets/4.3/blackbox/gyroflow_minimal.txt",
-      "hash": "8f67b1b38832dfd26ca434e95341fbf2b0b1a8d53c7bf50980388005226e7523",
+      "hash": "bf5b6fbf2d6058625dcc7c346fee03cb5e203b00060f7a522882996b51cc8b90",
       "title": "Gyroflow minimal settings",
       "firmware_version": [
         "4.3"
@@ -186,12 +160,34 @@
       "status": "OFFICIAL",
       "keywords": [
         "gyroflow",
+        "main FC",
         "minimal",
         "blackbox",
         "logging",
         "log"
       ],
-      "author": "Gyroflow, DusKing1"
+      "author": "Gyroflow, DusKing1",
+      "priority": 1000
+    },
+    {
+      "fullPath": "presets/4.3/blackbox/gyroflow_sencondary_fc.txt",
+      "hash": "cb404015478461c3f048ee3d1ff87492932f01ca16a948ca283b5c302991933e",
+      "title": "Secondary FC as Gyroflow motion logger",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BLACKBOX",
+      "status": "OFFICIAL",
+      "keywords": [
+        "gyroflow",
+        "secondary FC",
+        "minimal",
+        "blackbox",
+        "logging",
+        "log"
+      ],
+      "author": "Gyroflow, DusKing1",
+      "priority": 1000
     },
     {
       "fullPath": "presets/4.3/blackbox/reset_blackbox.txt",
@@ -209,7 +205,8 @@
         "logging",
         "log"
       ],
-      "author": "Betaflight"
+      "author": "Betaflight",
+      "priority": 1000
     },
     {
       "fullPath": "presets/4.3/bnf/flowbox.txt",
@@ -227,7 +224,7 @@
         "config"
       ],
       "author": "DusKing1",
-      "priority": 0
+      "priority": 100
     },
     {
       "fullPath": "presets/4.3/filters/BMI270.txt",
@@ -245,7 +242,7 @@
         "filters"
       ],
       "author": "Gyroflow, DusKing1",
-      "priority": 100
+      "priority": 10
     },
     {
       "fullPath": "presets/4.3/filters/defaults.txt",
@@ -263,7 +260,7 @@
         "reset"
       ],
       "author": "Betaflight",
-      "priority": 100
+      "priority": 10
     }
   ]
 }

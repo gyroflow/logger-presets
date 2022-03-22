@@ -1,8 +1,8 @@
-#$ TITLE: Gyroflow minimal settings
+#$ TITLE: Secondary FC as Gyroflow motion logger
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BLACKBOX
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: gyroflow, main FC, minimal, blackbox, logging, log, 
+#$ KEYWORDS: gyroflow, secondary FC, minimal, blackbox, logging, log, 
 #$ AUTHOR: Gyroflow, DusKing1
 
 #$ PARSER: MARKED
@@ -14,8 +14,10 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Description
 #$ DESCRIPTION: ------------
-#$ DESCRIPTION: This preset is for users who use their blackbox data of main flight controller as video motion data to be used with [Gyroflow](https://gyroflow.xyz). 
-#$ DESCRIPTION:
+#$ DESCRIPTION: This preset is for users who use a secondary flight controller as a [Gyroflow](https://gyroflow.xyz) motion logger. 
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/31283897/159398673-5f3f5f22-c6f9-421c-b2ec-4ac2629bfd59.jpg" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION: 
 #$ DESCRIPTION: Use the lowest rate to log gyro data **ONLY** and turn off all unnecessary blackbox fields. This allows for smaller blackbox files, longer blackbox recordings and lower CPU overhead.
 #$ DESCRIPTION:
 #$ DESCRIPTION: ## Horizon lock
@@ -23,6 +25,7 @@
 #$ DESCRIPTION: When the **Horizon lock** option is checked, ACC data will be logged to meet the data requirements for gyroflow's horizon lock feature.
 
 #$ OPTION BEGIN (CHECKED): gyroflow minimal requirements
+set runaway_takeoff_prevention = OFF
 set blackbox_sample_rate = 1/16
 set blackbox_disable_pids = ON
 set blackbox_disable_rc = ON
