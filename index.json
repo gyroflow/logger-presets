@@ -5,12 +5,12 @@
     "MetapropertyDirective": "#$",
     "PresetCategories": {
       "FILTERS": "FILTERS",
-      "BNF": "BNF",
+      "KIT": "KIT",
       "BLACKBOX": "BLACKBOX"
     },
     "PresetCategoriesPriorities": {
       "FILTERS": 10,
-      "BNF": 100,
+      "KIT": 100,
       "BLACKBOX": 1000
     },
     "MetadataTypes": {
@@ -122,8 +122,8 @@
     ],
     "category": [
       "BLACKBOX",
-      "BNF",
-      "FILTERS"
+      "FILTERS",
+      "KIT"
     ],
     "author": [
       "Betaflight",
@@ -210,12 +210,12 @@
     },
     {
       "fullPath": "presets/4.3/bnf/flowbox.txt",
-      "hash": "5c47c4e8929854faf7e4e99b445636e41415ccf98b61c5aa88af9c8c7e64c80f",
+      "hash": "e4acf91a561025cf79059b810f80b190dd4492b25e9e328a0deda070e162589e",
       "title": "Flowbox target settings",
       "firmware_version": [
         "4.3"
       ],
-      "category": "BNF",
+      "category": "KIT",
       "status": "OFFICIAL",
       "keywords": [
         "gyroflow",

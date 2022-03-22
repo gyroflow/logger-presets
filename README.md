@@ -29,7 +29,7 @@ A simple way to configure your Betaflight Flight Controller to a nice motion log
 | Blackbox | Gyroflow minimal settings | For users who use their blackbox data from main FC |
 | | Sencondary FC as Gyroflow motion logger | For users who use a sencondary FC as a motion logger |
 | Filters | BMI270 | For FC with BMI270 gyroscope sensor|
-| BNF | flowbox | All-in-one settings for flowbox and flowbox+flowshutter |
+| Kit | flowbox | All-in-one settings for flowbox and flowbox+flowshutter |
 
 ## Credits
 
