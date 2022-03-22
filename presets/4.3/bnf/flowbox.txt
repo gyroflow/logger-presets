@@ -1,6 +1,6 @@
 #$ TITLE: Flowbox target settings
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: BNF
+#$ CATEGORY: KIT
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: gyroflow, flowbox, target, config, 
 #$ AUTHOR: DusKing1

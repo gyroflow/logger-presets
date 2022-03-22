@@ -18,13 +18,13 @@ const ParserEnum =       ["TEXT", "MARKED"];
 
 const PresetCategories = {
     FILTERS:        "FILTERS",
-    BNF:            "BNF",
+    KIT:            "KIT",
     BLACKBOX:       "BLACKBOX",
 }
 
 const PresetCategoriesPriorities = {
     FILTERS:        10,
-    BNF:            100,
+    KIT:            100,
     BLACKBOX:       1000,
 }
 
