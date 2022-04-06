@@ -210,7 +210,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/flowbox.txt",
-      "hash": "e4acf91a561025cf79059b810f80b190dd4492b25e9e328a0deda070e162589e",
+      "hash": "8d81efae7f1f3b59dce357e893a4846888fbc914f782ca48b091591a7d146cd4",
       "title": "Flowbox target settings",
       "firmware_version": [
         "4.3"
@@ -228,7 +228,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/BMI270.txt",
-      "hash": "3b66afb0b135700bcdb32233465aa0cc0e148fcf0e1c832a9fa3662a6e24f6f9",
+      "hash": "73f7d9e93eb6d41e718d0a4d2e28aeae7ab4bd8a61e05c8a2fa1c7825624b42d",
       "title": "Gyroflow BMI270 Filter settings",
       "firmware_version": [
         "4.3"

@@ -73,6 +73,7 @@ set gyro_1_align_yaw = 1800
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): filter and blackbox settings
+set gyro_hardware_lpf = OPTION_2
 set runaway_takeoff_prevention = OFF
 set pid_process_denom = 1
 set simplified_gyro_filter = OFF
