@@ -106,7 +106,15 @@ set blackbox_disable_acc = OFF
 
 #$ OPTION BEGIN (UNCHECKED): flowshutter
 
+serial 0 0 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
 aux 0 0 0 1700 2100 0 0
+set blackbox_disable_rc = OFF
 set serialrx_provider = CRSF
 set motor_pwm_protocol = DSHOT600
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): rx debug
+set blackbox_mode = ALWAYS
+set debug_mode = RX_TIMING
 #$ OPTION END
