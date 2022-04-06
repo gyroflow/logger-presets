@@ -6,6 +6,7 @@
 #$ AUTHOR: Gyroflow, DusKing1
 #$ DESCRIPTION: DMI270 filter settings
 
+set gyro_hardware_lpf = gyro_hardware_lpf = OPTION_2
 set runaway_takeoff_prevention = OFF
 set pid_process_denom = 1
 set simplified_gyro_filter = OFF
