@@ -171,7 +171,7 @@
     },
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_secondary_fc.txt",
-      "hash": "f4462326ca8c7de3d5e2d84dadcf732f6749009c8bcf37bd9d57dcd0d078c88d",
+      "hash": "94a3ce080523c0e1ef81558c813700af2e549b38cff6ff431db050fc720befb0",
       "title": "Secondary FC as Gyroflow motion logger",
       "firmware_version": [
         "4.3"
