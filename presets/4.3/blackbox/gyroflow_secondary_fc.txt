@@ -11,12 +11,10 @@
 
 #$ DESCRIPTION:
 #$ DESCRIPTION: <img src="https://raw.githubusercontent.com/gyroflow/gyroflow/master/resources/logo_black.svg" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/>
-#$ DESCRIPTION:
+#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/31283897/159398673-5f3f5f22-c6f9-421c-b2ec-4ac2629bfd59.jpg" width="200px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: Description
 #$ DESCRIPTION: ------------
 #$ DESCRIPTION: This preset is for users who use a secondary flight controller as a [Gyroflow](https://gyroflow.xyz) motion logger. 
-#$ DESCRIPTION: 
-#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/31283897/159398673-5f3f5f22-c6f9-421c-b2ec-4ac2629bfd59.jpg" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Use the lowest rate to log gyro data **ONLY** and turn off all unnecessary blackbox fields. This allows for smaller blackbox files, longer blackbox recordings and lower CPU overhead.
 #$ DESCRIPTION:
