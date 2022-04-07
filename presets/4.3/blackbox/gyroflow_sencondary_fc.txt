@@ -25,6 +25,7 @@
 #$ DESCRIPTION: When the **Horizon lock** option is checked, ACC data will be logged to meet the data requirements for gyroflow's horizon lock feature.
 
 #$ OPTION BEGIN (CHECKED): gyroflow minimal requirements
+set small_angle = 180
 set runaway_takeoff_prevention = OFF
 set blackbox_sample_rate = 1/16
 set blackbox_disable_pids = ON
