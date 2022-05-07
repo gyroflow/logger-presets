@@ -1,0 +1,113 @@
+#$ TITLE: NeutronRC Stabilization Data Box
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: KIT
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: gyroflow, NeutronRC, SDB, databox, flowbox, target, config, 
+#$ AUTHOR: NeutronRC, DusKing1
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION:
+#$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/31283897/167240748-b82fc3fc-d208-40f8-b3eb-7423204c46a4.jpg" width="250px" style="margin-left: auto; margin-right: auto; display: block;"/>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Description
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: This preset is for the NeutronRC Stabilization Data Box.
+#$ DESCRIPTION: Users should firstly flash the STM32F411 firmware, then pick this preset. Once the preset was properly applied, users should hear the beeper sound.
+#$ DESCRIPTION:
+#$ DESCRIPTION: ## Note:
+#$ DESCRIPTION: 1. This preset is for NeutronRC SDB only, do not apply this preset on other devices.
+#$ DESCRIPTION: 2. Depending on the installation method and orientation, after applying this preset, the user may need to manually adjust the orientation of the flight controller until the movement of the aircraft model matches the actual movement of the camera.
+
+# Betaflight / STM32F411 (S411) 4.3.0 May 20 2021 / 03:37:19 (e0ad71db2) MSP API: 1.44
+board_name FLOWBOX
+manufacturer_id NERC
+resource BEEPER 1 B01
+resource MOTOR 1 B10
+resource MOTOR 2 A00
+resource MOTOR 3 B06
+resource MOTOR 4 B07
+resource SERIAL_TX 1 A09
+resource SERIAL_TX 2 A02
+resource SERIAL_RX 1 A10
+resource SERIAL_RX 2 A03
+resource LED 1 C13
+resource SPI_SCK 1 A05
+resource SPI_SCK 3 B03
+resource SPI_MISO 1 A06
+resource SPI_MISO 3 B04
+resource SPI_MOSI 1 A07
+resource SPI_MOSI 3 B05
+resource FLASH_CS 1 A15
+resource GYRO_EXTI 1 A01
+resource GYRO_CS 1 A04
+# timer
+timer B01 AF2
+# pin B01: TIM3 CH4 (AF2)
+timer B10 AF1
+# pin B10: TIM2 CH3 (AF1)
+timer B06 AF2
+# pin B06: TIM4 CH1 (AF2)
+timer B07 AF2
+# pin B07: TIM4 CH2 (AF2)
+timer A00 AF1
+# pin A00: TIM2 CH1 (AF1)
+# dma
+dma ADC 1 1
+# ADC 1: DMA2 Stream 4 Channel 0
+dma pin B01 0
+# pin B01: DMA1 Stream 2 Channel 5
+dma pin B10 0
+# pin B10: DMA1 Stream 1 Channel 3
+dma pin B06 0
+# pin B06: DMA1 Stream 0 Channel 2
+dma pin B07 0
+# pin B07: DMA1 Stream 3 Channel 2
+dma pin A00 0
+# pin A00: DMA1 Stream 5 Channel 3
+# feature
+feature -RX_PARALLEL_PWM
+feature -AIRMODE
+feature RX_SERIAL
+# serial
+serial 0 64 115200 57600 0 115200
+# master
+set blackbox_device = SPIFLASH
+set beeper_frequency = 2185
+set beeper_inversion = ON
+set beeper_od = OFF
+set system_hse_mhz = 8
+set flash_spi_bus = 3
+set gyro_1_spibus = 1
+set small_angle = 180
+set gyro_hardware_lpf = OPTION_2
+set runaway_takeoff_prevention = OFF
+set pid_process_denom = 1
+set simplified_gyro_filter = OFF
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_type = PT3
+set gyro_lpf2_static_hz = 80
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set simplified_gyro_filter = OFF
+set blackbox_sample_rate = 1/16
+set blackbox_device = SPIFLASH
+set blackbox_disable_pids = ON
+set blackbox_disable_rc = ON
+set blackbox_disable_setpoint = ON
+set blackbox_disable_bat = ON
+set blackbox_disable_mag = ON
+set blackbox_disable_alt = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_gyro = OFF
+set blackbox_disable_acc = OFF
+set blackbox_disable_debug = ON
+set blackbox_disable_motors = ON
+set blackbox_disable_gps = ON
+set blackbox_mode = NORMAL
+serial 0 0 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+aux 0 0 0 1700 2100 0 0
+set blackbox_disable_rc = OFF
+set serialrx_provider = CRSF
+set motor_pwm_protocol = DSHOT600

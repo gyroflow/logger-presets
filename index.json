@@ -128,12 +128,14 @@
     "author": [
       "Betaflight",
       "DusKing1",
-      "Gyroflow, DusKing1"
+      "Gyroflow, DusKing1",
+      "NeutronRC, DusKing1"
     ],
     "keywords": [
       "blackbox",
       "BMI270",
       "config",
+      "databox",
       "defaults",
       "filter",
       "filters",
@@ -143,7 +145,9 @@
       "logging",
       "main FC",
       "minimal",
+      "NeutronRC",
       "reset",
+      "SDB",
       "secondary FC",
       "target"
     ]
@@ -224,6 +228,27 @@
         "config"
       ],
       "author": "DusKing1",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.3/bnf/neutronrc_sdb.txt",
+      "hash": "0e521d1bf4c81cddbc14de4325c31c28edd9783d7c1beae9bcc7ac7eea446d81",
+      "title": "NeutronRC Stabilization Data Box",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "KIT",
+      "status": "OFFICIAL",
+      "keywords": [
+        "gyroflow",
+        "NeutronRC",
+        "SDB",
+        "databox",
+        "flowbox",
+        "target",
+        "config"
+      ],
+      "author": "NeutronRC, DusKing1",
       "priority": 100
     },
     {
