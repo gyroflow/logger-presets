@@ -214,7 +214,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/flowbox.txt",
-      "hash": "8c861655b1d866d17163bb7504b990aaf9dce3a25b2d5b6740e49065ef60c0ae",
+      "hash": "1e59d5d1d54f7fc121053e8c4dd918d103e00a67a1f232af1d0c8afeb2e7ef7f",
       "title": "Flowbox target settings",
       "firmware_version": [
         "4.3"
@@ -232,7 +232,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/neutronrc_sdb.txt",
-      "hash": "0e521d1bf4c81cddbc14de4325c31c28edd9783d7c1beae9bcc7ac7eea446d81",
+      "hash": "988e6481cc013e436b36fffe501a784d39438b57fcd574dd91248c5556f3b73c",
       "title": "NeutronRC Stabilization Data Box",
       "firmware_version": [
         "4.3"
