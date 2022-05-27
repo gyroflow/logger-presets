@@ -232,7 +232,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/neutronrc_sdb.txt",
-      "hash": "988e6481cc013e436b36fffe501a784d39438b57fcd574dd91248c5556f3b73c",
+      "hash": "8437dceb9a964e6fd0e0384119786c6cf98243b336f02df926814a3baf316e85",
       "title": "NeutronRC Stabilization Data Box",
       "firmware_version": [
         "4.3"
