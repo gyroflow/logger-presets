@@ -105,6 +105,7 @@ set runaway_takeoff_prevention = OFF
 serial 0 0 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
 aux 0 0 0 1700 2100 0 0
+aux 1 31 1 1700 2100 0 0
 set blackbox_disable_rc = OFF
 set serialrx_provider = CRSF
 set motor_pwm_protocol = DSHOT600
