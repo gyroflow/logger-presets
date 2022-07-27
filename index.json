@@ -155,7 +155,7 @@
   "presets": [
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_minimal.txt",
-      "hash": "bf5b6fbf2d6058625dcc7c346fee03cb5e203b00060f7a522882996b51cc8b90",
+      "hash": "773f1e56dadb31f4045c89461238012bc3945f4ff9c0c917ee2003e77ef7c71e",
       "title": "Gyroflow minimal settings",
       "firmware_version": [
         "4.3"
@@ -175,7 +175,7 @@
     },
     {
       "fullPath": "presets/4.3/blackbox/gyroflow_secondary_fc.txt",
-      "hash": "94a3ce080523c0e1ef81558c813700af2e549b38cff6ff431db050fc720befb0",
+      "hash": "045a9b143611a462f07906974ce0b9b2d97b00895ccd7433047d22dffcc878f8",
       "title": "Secondary FC as Gyroflow motion logger",
       "firmware_version": [
         "4.3"
